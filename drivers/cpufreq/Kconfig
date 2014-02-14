@@ -140,33 +140,6 @@ config CPU_FREQ_GOV_PERFORMANCE
 
 	  If in doubt, say Y.
 
-<<<<<<< HEAD
-=======
-config CPU_FREQ_GOV_WHEATLEY
-	tristate "'wheatley' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	'WHEATLEY' - the wheatley governor from GlaDOS!
-
-config CPU_FREQ_GOV_INTELLIDEMAND
-	tristate "'intellidemand' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	'intellidemand' - intelligent freq switching!
-
-config CPU_FREQ_GOV_ASSWAX
-	tristate "'asswax' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	'asswax' - asstastic!
-
-config CPU_FREQ_GOV_SMARTASS2
-	tristate "'smartassV2' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	'smartassv2' - a smart governor
-
->>>>>>> 52d2137... Re-add SmartAssV2 gov
 config CPU_FREQ_GOV_POWERSAVE
 	tristate "'powersave' governor"
 	help
