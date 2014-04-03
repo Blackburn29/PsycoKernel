@@ -1,0 +1,1 @@
+cmd_drivers/input/evbug.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/M8_ATT/scripts/module-common.lds --build-id  -o drivers/input/evbug.ko drivers/input/evbug.o drivers/input/evbug.mod.o

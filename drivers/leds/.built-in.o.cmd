@@ -1,0 +1,1 @@
+cmd_drivers/leds/built-in.o :=  /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/leds/built-in.o drivers/leds/led-core.o drivers/leds/led-class.o drivers/leds/led-triggers.o drivers/leds/leds-qpnp.o drivers/leds/ledtrig-backlight.o drivers/leds/ledtrig-default-on.o drivers/leds/tps61310_flashlight.o 

@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-msm/qdsp6v2/ultrasound/version_b/built-in.o :=  /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o arch/arm/mach-msm/qdsp6v2/ultrasound/version_b/built-in.o arch/arm/mach-msm/qdsp6v2/ultrasound/version_b/q6usm_b.o arch/arm/mach-msm/qdsp6v2/ultrasound/version_b/../usf.o arch/arm/mach-msm/qdsp6v2/ultrasound/version_b/../usfcdev.o 

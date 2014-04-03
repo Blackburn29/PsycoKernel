@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb/frontends/stb6000.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/M8_ATT/scripts/module-common.lds --build-id  -o drivers/media/dvb/frontends/stb6000.ko drivers/media/dvb/frontends/stb6000.o drivers/media/dvb/frontends/stb6000.mod.o

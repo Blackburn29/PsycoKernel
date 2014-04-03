@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/msm/dvb/demux/mpq-dmx-hw-plugin.o := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/media/platform/msm/dvb/demux/mpq-dmx-hw-plugin.o drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.o drivers/media/platform/msm/dvb/demux/mpq_sdmx.o drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_tspp_v1.o 
