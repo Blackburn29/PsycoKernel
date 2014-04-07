@@ -1,1 +1,1 @@
-cmd_arch/arm/mach-msm/msm-buspm-dev.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/M8_ATT/scripts/module-common.lds --build-id  -o arch/arm/mach-msm/msm-buspm-dev.ko arch/arm/mach-msm/msm-buspm-dev.o arch/arm/mach-msm/msm-buspm-dev.mod.o
+cmd_arch/arm/mach-msm/msm-buspm-dev.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o arch/arm/mach-msm/msm-buspm-dev.ko arch/arm/mach-msm/msm-buspm-dev.o arch/arm/mach-msm/msm-buspm-dev.mod.o

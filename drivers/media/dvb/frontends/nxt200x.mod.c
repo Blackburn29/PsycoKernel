@@ -21,7 +21,6 @@ __attribute__((section("__versions"))) = {
 	{ 0x15692c87, "param_ops_int" },
 	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
 	{ 0x6d4f69dd, "i2c_transfer" },
-	{ 0x5f754e5a, "memset" },
 	{ 0x27e1a049, "printk" },
 	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0x1af6413e, "kmem_cache_alloc_trace" },

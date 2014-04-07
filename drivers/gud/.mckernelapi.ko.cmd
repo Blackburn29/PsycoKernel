@@ -1,1 +1,1 @@
-cmd_drivers/gud/mckernelapi.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/M8_ATT/scripts/module-common.lds --build-id  -o drivers/gud/mckernelapi.ko drivers/gud/mckernelapi.o drivers/gud/mckernelapi.mod.o
+cmd_drivers/gud/mckernelapi.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o drivers/gud/mckernelapi.ko drivers/gud/mckernelapi.o drivers/gud/mckernelapi.mod.o

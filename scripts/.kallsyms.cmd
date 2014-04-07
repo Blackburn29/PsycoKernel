@@ -1,4 +1,4 @@
-cmd_scripts/kallsyms := gcc -Wp,-MD,scripts/.kallsyms.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/mnt/android/M8Kernel/M8_ATT/tools/include  -o scripts/kallsyms scripts/kallsyms.c  
+cmd_scripts/kallsyms := gcc -Wp,-MD,scripts/.kallsyms.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O3 -fomit-frame-pointer   -I/mnt/android/M8Kernel/PsycoKernel/tools/include  -o scripts/kallsyms scripts/kallsyms.c  
 
 source_scripts/kallsyms := scripts/kallsyms.c
 

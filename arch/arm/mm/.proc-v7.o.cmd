@@ -1,4 +1,4 @@
-cmd_arch/arm/mm/proc-v7.o := /mnt/android/M8Kernel/M8_ATT/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mm/.proc-v7.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/M8_ATT/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/M8_ATT/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15  -include asm/unified.h -msoft-float -gdwarf-2     -Wa,-march=armv7-a   -c -o arch/arm/mm/proc-v7.o arch/arm/mm/proc-v7.S
+cmd_arch/arm/mm/proc-v7.o := /mnt/android/M8Kernel/PsycoKernel/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mm/.proc-v7.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/PsycoKernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/PsycoKernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15  -include asm/unified.h -msoft-float -gdwarf-2     -Wa,-march=armv7-a  -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -ffast-math -ftree-vectorize -pipe -c -o arch/arm/mm/proc-v7.o arch/arm/mm/proc-v7.S
 
 source_arch/arm/mm/proc-v7.o := arch/arm/mm/proc-v7.S
 
@@ -22,7 +22,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/arm/thumbee.h) \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/swp/emulate.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/unified.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/init.h \
@@ -40,32 +40,32 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/linkage.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/linkage.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/assembler.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/linkage.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/cpu/use/domains.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ptrace.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hwcap.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/domain.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hwcap.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/verify/permission/fault.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/asm-offsets.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/asm-offsets.h \
   include/generated/asm-offsets.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-hwdef.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level-hwdef.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-hwdef.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level-hwdef.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
     $(wildcard include/config/highpte.h) \
   include/linux/const.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/proc-fns.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/glue-proc.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/proc-fns.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/glue-proc.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm710.h) \
@@ -91,8 +91,8 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/cpu/v6.h) \
     $(wildcard include/config/cpu/v6k.h) \
     $(wildcard include/config/cpu/v7.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/glue.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/page.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/glue.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -104,7 +104,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/memory/hotplug/sparse.h) \
   include/asm-generic/getorder.h \
   include/asm-generic/pgtable-nopud.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/memory.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/need/mach/memory/h.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
@@ -130,12 +130,12 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level.h \
   arch/arm/mm/proc-macros.S \
     $(wildcard include/config/cpu/dcache/writethrough.h) \
     $(wildcard include/config/pm/sleep.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/thread_info.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/fpstate.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/thread_info.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
   arch/arm/mm/proc-v7-2level.S \

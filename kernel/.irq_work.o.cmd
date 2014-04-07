@@ -1,4 +1,4 @@
-cmd_kernel/irq_work.o := /mnt/android/M8Kernel/M8_ATT/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,kernel/.irq_work.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/M8_ATT/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/M8_ATT/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -Wno-maybe-uninitialized -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(irq_work)"  -D"KBUILD_MODNAME=KBUILD_STR(irq_work)" -c -o kernel/.tmp_irq_work.o kernel/irq_work.c
+cmd_kernel/irq_work.o := /mnt/android/M8Kernel/PsycoKernel/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,kernel/.irq_work.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/PsycoKernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/PsycoKernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -finline-functions -fgcse-after-reload -ftree-partial-pre -fipa-cp-clone -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -ftree-vectorize -pipe -fno-delete-null-pointer-checks -funswitch-loops -fpredictive-commoning -marm -mfloat-abi=softfp -funsafe-math-optimizations -funroll-loops -mvectorize-with-neon-quad -fgraphite-identity -floop-block -ftree-loop-linear -floop-strip-mine -ftree-loop-distribution -fmodulo-sched -fmodulo-sched-allow-regmoves -Os -Wno-maybe-uninitialized -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(irq_work)"  -D"KBUILD_MODNAME=KBUILD_STR(irq_work)" -c -o kernel/.tmp_irq_work.o kernel/irq_work.c
 
 source_kernel/irq_work.o := kernel/irq_work.c
 
@@ -6,7 +6,7 @@ deps_kernel/irq_work.o := \
   include/linux/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/panic/on/data/corruption.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/bug.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/debug/bugverbose.h) \
@@ -22,7 +22,7 @@ deps_kernel/irq_work.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/linkage.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/linkage.h \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
     $(wildcard include/config/smp.h) \
@@ -42,28 +42,28 @@ deps_kernel/irq_work.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/posix_types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/posix_types.h \
   include/asm-generic/posix_types.h \
   /mnt/android/toolchains/arm-eabi-4.8/lib/gcc/arm-eabi/4.8/include/stdarg.h \
   include/linux/bitops.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/bitops.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/bitops.h \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/irqflags.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ptrace.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/irqflags.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hwcap.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hwcap.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -72,10 +72,10 @@ deps_kernel/irq_work.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/byteorder.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/swab.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
   include/linux/log2.h \
@@ -88,8 +88,8 @@ deps_kernel/irq_work.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/div64.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/compiler.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/div64.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/compiler.h \
   include/linux/export.h \
     $(wildcard include/config/symbol/prefix.h) \
     $(wildcard include/config/modversions.h) \
@@ -97,17 +97,17 @@ deps_kernel/irq_work.o := \
   include/linux/irq_work.h \
   include/linux/llist.h \
     $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cmpxchg.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cmpxchg.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/barrier.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/barrier.h \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/outercache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   include/asm-generic/cmpxchg-local.h \
@@ -122,12 +122,12 @@ deps_kernel/irq_work.o := \
     $(wildcard include/config/preempt/notifiers.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/thread_info.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/fpstate.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/domain.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/cpu/use/domains.h) \
@@ -152,8 +152,8 @@ deps_kernel/irq_work.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/string.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/smp.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/string.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/smp.h \
     $(wildcard include/config/hotplug/cpu.h) \
   include/linux/pfn.h \
   arch/arm/include/generated/asm/percpu.h \
@@ -173,20 +173,20 @@ deps_kernel/irq_work.o := \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hardirq.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hardirq.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/irq.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/irq.h \
     $(wildcard include/config/sparse/irq.h) \
   include/linux/irq_cpustat.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/processor.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hw_breakpoint.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hw_breakpoint.h \
 
 kernel/irq_work.o: $(deps_kernel/irq_work.o)
 

@@ -1,7 +1,5 @@
 	.cpu cortex-a15
 	.fpu softvfp
-	.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
-	.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
 	.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
 	.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
 	.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
@@ -14,7 +12,7 @@
 @	compiled by GNU C version 4.6.x-google 20120106 (prerelease), GMP version 5.0.5, MPFR version 3.1.1, MPC version 1.0.1
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I /mnt/android/M8Kernel/M8_ATT/arch/arm/include
+@ -I /mnt/android/M8Kernel/PsycoKernel/arch/arm/include
 @ -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include
 @ -iprefix /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/
 @ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm
@@ -22,53 +20,62 @@
 @ -D KBUILD_BASENAME=KBUILD_STR(asm_offsets)
 @ -D KBUILD_MODNAME=KBUILD_STR(asm_offsets)
 @ -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include
-@ -include /mnt/android/M8Kernel/M8_ATT/include/linux/kconfig.h
+@ -include /mnt/android/M8Kernel/PsycoKernel/include/linux/kconfig.h
 @ -MD arch/arm/kernel/.asm-offsets.s.d arch/arm/kernel/asm-offsets.c
-@ -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork
-@ -mcpu=cortex-a15 -mfloat-abi=soft -mfpu=vfp
+@ -mlittle-endian -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -marm
+@ -mfloat-abi=softfp -mvectorize-with-neon-quad -marm -mabi=aapcs-linux
+@ -mno-thumb-interwork -mcpu=cortex-a15 -mfloat-abi=soft
 @ -auxbase-strip arch/arm/kernel/asm-offsets.s -g -Os -Wall -Wundef
 @ -Wstrict-prototypes -Wno-trigraphs -Werror=implicit-function-declaration
 @ -Wno-format-security -Wno-maybe-uninitialized -Wframe-larger-than=1024
 @ -Wno-unused-but-set-variable -Wdeclaration-after-statement
-@ -Wno-pointer-sign -fno-strict-aliasing -fno-common
-@ -fno-delete-null-pointer-checks -fno-dwarf2-cfi-asm -fstack-protector
-@ -funwind-tables -fomit-frame-pointer -fno-strict-overflow
-@ -fconserve-stack -fverbose-asm
-@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
-@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments
-@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
-@ -fdefer-pop -fdevirtualize -fearly-inlining
-@ -feliminate-unused-debug-types -fexpensive-optimizations
-@ -fforward-propagate -ffunction-cse -fgcse -fgcse-lm -fgnu-runtime
-@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
-@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
-@ -finline-functions -finline-functions-called-once
-@ -finline-small-functions -fipa-cp -fipa-profile -fipa-pure-const
-@ -fipa-reference -fipa-sra -fira-hoist-pressure -fira-share-save-slots
-@ -fira-share-spill-slots -fivopts -fkeep-static-consts
-@ -fleading-underscore -fmath-errno -fmerge-constants -fmerge-debug-strings
+@ -Wno-pointer-sign -fno-strict-aliasing -fno-common -finline-functions
+@ -fgcse-after-reload -ftree-partial-pre -fipa-cp-clone -ftree-vectorize
+@ -fno-delete-null-pointer-checks -funswitch-loops -fpredictive-commoning
+@ -funsafe-math-optimizations -funroll-loops -fgraphite-identity
+@ -floop-block -floop-interchange -floop-strip-mine
+@ -ftree-loop-distribution -fmodulo-sched -fmodulo-sched-allow-regmoves
+@ -fno-dwarf2-cfi-asm -fstack-protector -funwind-tables
+@ -fomit-frame-pointer -fno-strict-overflow -fconserve-stack -fverbose-asm
+@ options enabled:  -faggressive-loop-optimizations -fassociative-math
+@ -fauto-inc-dec -fbranch-count-reg -fcaller-saves
+@ -fcombine-stack-adjustments -fcompare-elim -fcprop-registers
+@ -fcrossjumping -fcse-follow-jumps -fdefer-pop -fdevirtualize
+@ -fearly-inlining -feliminate-unused-debug-types -fexpensive-optimizations
+@ -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-lm
+@ -fgnu-runtime -fgraphite-identity -fguess-branch-probability
+@ -fhoist-adjacent-loads -fident -fif-conversion -fif-conversion2
+@ -findirect-inlining -finline -finline-atomics -finline-functions
+@ -finline-functions-called-once -finline-small-functions -fipa-cp
+@ -fipa-cp-clone -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+@ -fivopts -fkeep-static-consts -fleading-underscore -floop-block
+@ -floop-interchange -floop-strip-mine -fmath-errno -fmerge-constants
+@ -fmerge-debug-strings -fmodulo-sched -fmodulo-sched-allow-regmoves
 @ -fmove-loop-invariants -fomit-frame-pointer -foptimize-register-move
 @ -foptimize-sibling-calls -fpartial-inlining -fpeephole -fpeephole2
-@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+@ -fpredictive-commoning -fprefetch-loop-arrays -freciprocal-math
+@ -freg-struct-return -fregmove -frename-registers -freorder-blocks
 @ -freorder-functions -frerun-cse-after-loop
 @ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
 @ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
 @ -fsched-pressure -fsched-rank-heuristic -fsched-spec
 @ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns2
-@ -fsection-anchors -fshow-column -fshrink-wrap -fsigned-zeros
-@ -fsplit-ivs-in-unroller -fsplit-wide-types -fstack-protector
-@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
-@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
-@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
-@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
-@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
-@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
-@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+@ -fsection-anchors -fshow-column -fshrink-wrap -fsplit-ivs-in-unroller
+@ -fsplit-wide-types -fstack-protector -fstrict-volatile-bitfields
+@ -fsync-libcalls -fthread-jumps -ftoplevel-reorder -ftree-bit-ccp
+@ -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars
+@ -ftree-copy-prop -ftree-copyrename -ftree-cselim -ftree-dce
+@ -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
+@ -ftree-loop-distribution -ftree-loop-if-convert -ftree-loop-im
+@ -ftree-loop-ivcanon -ftree-loop-optimize -ftree-parallelize-loops=
+@ -ftree-partial-pre -ftree-phiprop -ftree-pre -ftree-pta -ftree-reassoc
+@ -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize -ftree-slsr -ftree-sra
+@ -ftree-switch-conversion -ftree-tail-merge -ftree-ter
+@ -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funit-at-a-time
+@ -funroll-loops -funsafe-math-optimizations -funswitch-loops
 @ -funwind-tables -fvar-tracking -fvar-tracking-assignments -fverbose-asm
-@ -fzero-initialized-in-bss -marm -mlittle-endian -msched-prolog
+@ -fweb -fzero-initialized-in-bss -marm -mlittle-endian -msched-prolog
 @ -munaligned-access -mvectorize-with-neon-quad
 
 	.text
@@ -432,9 +439,9 @@ main:
 	.file 5 "include/linux/capability.h"
 	.file 6 "include/linux/time.h"
 	.file 7 "include/linux/sched.h"
-	.file 8 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/spinlock_types.h"
+	.file 8 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/spinlock_types.h"
 	.file 9 "include/linux/spinlock_types.h"
-	.file 10 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/processor.h"
+	.file 10 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/processor.h"
 	.file 11 "include/asm-generic/atomic-long.h"
 	.file 12 "include/linux/rbtree.h"
 	.file 13 "include/linux/cpumask.h"
@@ -443,12 +450,12 @@ main:
 	.file 16 "include/linux/wait.h"
 	.file 17 "include/linux/completion.h"
 	.file 18 "include/linux/mm_types.h"
-	.file 19 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level-types.h"
-	.file 20 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/mmu.h"
+	.file 19 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level-types.h"
+	.file 20 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/mmu.h"
 	.file 21 "include/linux/mm.h"
 	.file 22 "include/asm-generic/cputime.h"
 	.file 23 "include/linux/sem.h"
-	.file 24 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/signal.h"
+	.file 24 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/signal.h"
 	.file 25 "include/asm-generic/signal-defs.h"
 	.file 26 "include/asm-generic/siginfo.h"
 	.file 27 "include/linux/signal.h"
@@ -477,22 +484,22 @@ main:
 	.file 50 "include/linux/pm.h"
 	.file 51 "include/linux/device.h"
 	.file 52 "include/linux/pm_wakeup.h"
-	.file 53 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/device.h"
+	.file 53 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/device.h"
 	.file 54 "include/linux/dma-mapping.h"
 	.file 55 "include/linux/dma-attrs.h"
 	.file 56 "include/linux/dma-direction.h"
 	.file 57 "include/asm-generic/scatterlist.h"
-	.file 58 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cacheflush.h"
-	.file 59 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hwcap.h"
+	.file 58 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cacheflush.h"
+	.file 59 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hwcap.h"
 	.file 60 "include/linux/printk.h"
 	.file 61 "include/linux/kernel.h"
-	.file 62 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/spinlock.h"
+	.file 62 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/spinlock.h"
 	.file 63 "include/linux/bug.h"
 	.file 64 "include/asm-generic/percpu.h"
 	.file 65 "include/linux/percpu_counter.h"
 	.file 66 "include/linux/debug_locks.h"
-	.file 67 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/dma-mapping.h"
-	.file 68 "/mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cachetype.h"
+	.file 67 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/dma-mapping.h"
+	.file 68 "/mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cachetype.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
 	.4byte	0x47b4
@@ -9961,8 +9968,6 @@ main:
 	.ascii	"exit_code\000"
 .LASF580:
 	.ascii	"running\000"
-.LASF957:
-	.ascii	"/mnt/android/M8Kernel/M8_ATT\000"
 .LASF853:
 	.ascii	"dma_map_ops\000"
 .LASF32:
@@ -10165,6 +10170,21 @@ main:
 	.ascii	"vm_next\000"
 .LASF889:
 	.ascii	"module\000"
+.LASF955:
+	.ascii	"GNU C 4.8 -mlittle-endian -mcpu=cortex-a15 -mtune=c"
+	.ascii	"ortex-a15 -mfpu=neon-vfpv4 -marm -mfloat-abi=softfp"
+	.ascii	" -mvectorize-with-neon-quad -marm -mabi=aapcs-linux"
+	.ascii	" -mno-thumb-interwork -mcpu=cortex-a15 -mfloat-abi="
+	.ascii	"soft -g -Os -fno-strict-aliasing -fno-common -finli"
+	.ascii	"ne-functions -fgcse-after-reload -ftree-partial-pre"
+	.ascii	" -fipa-cp-clone -ftree-vectorize -fno-delete-null-p"
+	.ascii	"ointer-checks -funswitch-loops -fpredictive-commoni"
+	.ascii	"ng -funsafe-math-optimizations -funroll-loops -fgra"
+	.ascii	"phite-identity -floop-block -floop-interchange -flo"
+	.ascii	"op-strip-mine -ftree-loop-distribution -fmodulo-sch"
+	.ascii	"ed -fmodulo-sched-allow-regmoves -fno-dwarf2-cfi-as"
+	.ascii	"m -fstack-protector -funwind-tables -fomit-frame-po"
+	.ascii	"inter -fno-strict-overflow -fconserve-stack\000"
 .LASF343:
 	.ascii	"sigaction\000"
 .LASF337:
@@ -10231,6 +10251,8 @@ main:
 	.ascii	"hang_detected\000"
 .LASF446:
 	.ascii	"nr_zones\000"
+.LASF957:
+	.ascii	"/mnt/android/M8Kernel/PsycoKernel\000"
 .LASF643:
 	.ascii	"prio_changed\000"
 .LASF855:
@@ -11559,13 +11581,6 @@ main:
 	.ascii	"tv_sec\000"
 .LASF23:
 	.ascii	"__kernel_clockid_t\000"
-.LASF955:
-	.ascii	"GNU C 4.8 -mlittle-endian -marm -mabi=aapcs-linux -"
-	.ascii	"mno-thumb-interwork -mcpu=cortex-a15 -mfloat-abi=so"
-	.ascii	"ft -mfpu=vfp -g -Os -fno-strict-aliasing -fno-commo"
-	.ascii	"n -fno-delete-null-pointer-checks -fno-dwarf2-cfi-a"
-	.ascii	"sm -fstack-protector -funwind-tables -fomit-frame-p"
-	.ascii	"ointer -fno-strict-overflow -fconserve-stack\000"
 .LASF938:
 	.ascii	"init_pid_ns\000"
 .LASF8:

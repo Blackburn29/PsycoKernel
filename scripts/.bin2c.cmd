@@ -1,4 +1,4 @@
-cmd_scripts/bin2c := gcc -Wp,-MD,scripts/.bin2c.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/mnt/android/M8Kernel/M8_ATT/tools/include  -o scripts/bin2c scripts/bin2c.c  
+cmd_scripts/bin2c := gcc -Wp,-MD,scripts/.bin2c.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O3 -fomit-frame-pointer   -I/mnt/android/M8Kernel/PsycoKernel/tools/include  -o scripts/bin2c scripts/bin2c.c  
 
 source_scripts/bin2c := scripts/bin2c.c
 

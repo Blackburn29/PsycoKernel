@@ -1,4 +1,4 @@
-cmd_scripts/genksyms/genksyms.o := gcc -Wp,-MD,scripts/genksyms/.genksyms.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer     -c -o scripts/genksyms/genksyms.o scripts/genksyms/genksyms.c
+cmd_scripts/genksyms/genksyms.o := gcc -Wp,-MD,scripts/genksyms/.genksyms.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O3 -fomit-frame-pointer     -c -o scripts/genksyms/genksyms.o scripts/genksyms/genksyms.c
 
 source_scripts/genksyms/genksyms.o := scripts/genksyms/genksyms.c
 

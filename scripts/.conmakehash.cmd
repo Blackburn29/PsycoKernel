@@ -1,4 +1,4 @@
-cmd_scripts/conmakehash := gcc -Wp,-MD,scripts/.conmakehash.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/mnt/android/M8Kernel/M8_ATT/tools/include  -o scripts/conmakehash scripts/conmakehash.c  
+cmd_scripts/conmakehash := gcc -Wp,-MD,scripts/.conmakehash.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O3 -fomit-frame-pointer   -I/mnt/android/M8Kernel/PsycoKernel/tools/include  -o scripts/conmakehash scripts/conmakehash.c  
 
 source_scripts/conmakehash := scripts/conmakehash.c
 

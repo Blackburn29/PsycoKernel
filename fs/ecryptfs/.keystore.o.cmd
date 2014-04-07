@@ -1,4 +1,4 @@
-cmd_fs/ecryptfs/keystore.o := /mnt/android/M8Kernel/M8_ATT/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,fs/ecryptfs/.keystore.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/M8_ATT/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/M8_ATT/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -Wno-maybe-uninitialized -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(keystore)"  -D"KBUILD_MODNAME=KBUILD_STR(ecryptfs)" -c -o fs/ecryptfs/.tmp_keystore.o fs/ecryptfs/keystore.c
+cmd_fs/ecryptfs/keystore.o := /mnt/android/M8Kernel/PsycoKernel/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,fs/ecryptfs/.keystore.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/PsycoKernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/PsycoKernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -finline-functions -fgcse-after-reload -ftree-partial-pre -fipa-cp-clone -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -ftree-vectorize -pipe -fno-delete-null-pointer-checks -funswitch-loops -fpredictive-commoning -marm -mfloat-abi=softfp -funsafe-math-optimizations -funroll-loops -mvectorize-with-neon-quad -fgraphite-identity -floop-block -ftree-loop-linear -floop-strip-mine -ftree-loop-distribution -fmodulo-sched -fmodulo-sched-allow-regmoves -Os -Wno-maybe-uninitialized -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(keystore)"  -D"KBUILD_MODNAME=KBUILD_STR(ecryptfs)" -c -o fs/ecryptfs/.tmp_keystore.o fs/ecryptfs/keystore.c
 
 source_fs/ecryptfs/keystore.o := fs/ecryptfs/keystore.c
 
@@ -21,16 +21,16 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/posix_types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/posix_types.h \
   include/asm-generic/posix_types.h \
   /mnt/android/toolchains/arm-eabi-4.8/lib/gcc/arm-eabi/4.8/include/stdarg.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/string.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/string.h \
   include/linux/syscalls.h \
     $(wildcard include/config/ftrace/syscalls.h) \
     $(wildcard include/config/ppc64.h) \
@@ -39,10 +39,10 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/have/syscall/wrappers.h) \
     $(wildcard include/config/ia64.h) \
   include/linux/aio_abi.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/byteorder.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/swab.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/linux/capability.h \
   include/linux/list.h \
@@ -53,20 +53,20 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/panic/on/data/corruption.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/bug.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/debug/bugverbose.h) \
     $(wildcard include/config/arm/lpae.h) \
   include/linux/linkage.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/linkage.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/linkage.h \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
     $(wildcard include/config/smp.h) \
   include/linux/sem.h \
     $(wildcard include/config/sysvipc.h) \
   include/linux/ipc.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ipcbuf.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ipcbuf.h \
   include/asm-generic/ipcbuf.h \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
@@ -82,16 +82,16 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
   include/linux/bitops.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/bitops.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/bitops.h \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/irqflags.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ptrace.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/irqflags.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hwcap.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hwcap.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -101,22 +101,22 @@ deps_fs/ecryptfs/keystore.o := \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/thread_info.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/fpstate.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/domain.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/cpu/use/domains.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/barrier.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/barrier.h \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/outercache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   include/linux/kernel.h \
@@ -139,25 +139,25 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/div64.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/compiler.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/div64.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/compiler.h \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/spinlock_types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/spinlock.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/msm/krait/wfe/fixup.h) \
     $(wildcard include/config/arm/ticket/locks.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/processor.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hw_breakpoint.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
@@ -192,14 +192,14 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/atomic.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cmpxchg.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/atomic.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cmpxchg.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
   include/asm-generic/atomic-long.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/sembuf.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/sembuf.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/rcu/torture/test.h) \
     $(wildcard include/config/tree/rcu.h) \
@@ -212,7 +212,7 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/hotplug/cpu.h) \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/threads.h \
@@ -226,18 +226,18 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/seqlock.h \
   include/linux/completion.h \
   include/linux/wait.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/current.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/current.h \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
   include/linux/rcutree.h \
   arch/arm/include/generated/asm/siginfo.h \
   include/asm-generic/siginfo.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/signal.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/sigcontext.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/sigcontext.h \
   include/linux/unistd.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/unistd.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
   include/linux/quota.h \
     $(wildcard include/config/quota/netlink/interface.h) \
@@ -254,7 +254,7 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/percpu_counter.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/smp.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/smp.h \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
@@ -295,9 +295,9 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/linux/param.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/param.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/timex.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/timex.h \
   arch/arm/mach-msm/include/mach/timex.h \
     $(wildcard include/config/have/arch/has/current/timer.h) \
   include/linux/ftrace_event.h \
@@ -320,7 +320,7 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/guard.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/page.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -331,9 +331,9 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/kuser/helpers.h) \
     $(wildcard include/config/have/arch/pfn/valid.h) \
     $(wildcard include/config/memory/hotplug/sparse.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/glue.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level-types.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/memory.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/glue.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level-types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/need/mach/memory/h.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
@@ -362,7 +362,7 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
   include/asm-generic/getorder.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/mmu.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
   include/linux/mm.h \
     $(wildcard include/config/fix/movable/zone.h) \
@@ -411,7 +411,7 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/sched/mc.h) \
     $(wildcard include/config/sched/book.h) \
     $(wildcard include/config/use/percpu/numa/node/id.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/topology.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/topology.h \
     $(wildcard include/config/arm/cpu/topology.h) \
   include/asm-generic/topology.h \
   include/linux/mmdebug.h \
@@ -422,10 +422,10 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/range.h \
   include/linux/bit_spinlock.h \
   include/linux/shrinker.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/proc-fns.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/glue-proc.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/proc-fns.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/glue-proc.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm710.h) \
@@ -447,9 +447,9 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/cpu/v6k.h) \
     $(wildcard include/config/cpu/v7.h) \
   include/asm-generic/pgtable-nopud.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-hwdef.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level-hwdef.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-hwdef.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level-hwdef.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level.h \
   include/asm-generic/pgtable.h \
   include/linux/page-flags.h \
     $(wildcard include/config/pageflags/extended.h) \
@@ -491,7 +491,7 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/list_bl.h \
   include/linux/path.h \
   include/linux/stat.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/stat.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/stat.h \
   include/linux/radix-tree.h \
   include/linux/pid.h \
   include/linux/semaphore.h \
@@ -499,7 +499,7 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/migrate_mode.h \
   include/linux/nfs_fs_i.h \
   include/linux/fcntl.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/fcntl.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/err.h \
   include/linux/hardirq.h \
@@ -508,8 +508,8 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/irq/time/accounting.h) \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hardirq.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/irq.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hardirq.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/irq.h \
     $(wildcard include/config/sparse/irq.h) \
   include/linux/irq_cpustat.h \
   include/linux/perf_event.h \
@@ -591,7 +591,7 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/net/cls/cgroup.h) \
     $(wildcard include/config/blk/cgroup.h) \
     $(wildcard include/config/netprio/cgroup.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/perf_event.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/perf_event.h \
   arch/arm/include/generated/asm/local64.h \
   include/asm-generic/local64.h \
   include/linux/pid_namespace.h \
@@ -605,7 +605,7 @@ deps_fs/ecryptfs/keystore.o := \
   include/linux/trace_clock.h \
   include/linux/kallsyms.h \
     $(wildcard include/config/kallsyms.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ftrace.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ftrace.h \
     $(wildcard include/config/old/mcount.h) \
     $(wildcard include/config/arm/unwind.h) \
   include/linux/cpu.h \
@@ -629,7 +629,7 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/pm/runtime.h) \
     $(wildcard include/config/pm/clk.h) \
     $(wildcard include/config/pm/generic/domains.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/device.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
     $(wildcard include/config/iommu/api.h) \
     $(wildcard include/config/arm/dma/use/iommu.h) \
@@ -644,22 +644,22 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/x86/32.h) \
     $(wildcard include/config/debug/highmem.h) \
   include/linux/uaccess.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/uaccess.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/unified.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/uaccess.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cacheflush.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cacheflush.h \
     $(wildcard include/config/smp/on/up.h) \
     $(wildcard include/config/arm/errata/411920.h) \
     $(wildcard include/config/cpu/cache/vipt.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/glue-cache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/glue-cache.h \
     $(wildcard include/config/cpu/cache/v3.h) \
     $(wildcard include/config/cpu/cache/v4.h) \
     $(wildcard include/config/cpu/cache/v4wb.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/shmparam.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cachetype.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/shmparam.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cachetype.h \
     $(wildcard include/config/cpu/cache/vivt.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/kmap_types.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/highmem.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/kmap_types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/highmem.h \
     $(wildcard include/config/cpu/tlb/v6.h) \
   include/linux/hugetlb_inline.h \
   include/linux/random.h \
@@ -679,11 +679,11 @@ deps_fs/ecryptfs/keystore.o := \
     $(wildcard include/config/debug/kmemleak.h) \
   include/linux/scatterlist.h \
     $(wildcard include/config/debug/sg.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/scatterlist.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/scatterlist.h \
     $(wildcard include/config/arm/has/sg/chain.h) \
   include/asm-generic/scatterlist.h \
     $(wildcard include/config/need/sg/dma/length.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/io.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/io.h \
     $(wildcard include/config/need/mach/io/h.h) \
     $(wildcard include/config/pcmcia/soc/common.h) \
     $(wildcard include/config/pci.h) \

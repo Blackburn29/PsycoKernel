@@ -1,4 +1,4 @@
-cmd_arch/arm/boot/msm8974pro-ab-pm8941-m8.dtb := /mnt/android/M8Kernel/M8_ATT/scripts/dtc/dtc -O dtb -o arch/arm/boot/msm8974pro-ab-pm8941-m8.dtb -b 0  -d arch/arm/boot/.msm8974pro-ab-pm8941-m8.dtb.d arch/arm/boot/dts/msm8974pro-ab-pm8941-m8.dts
+cmd_arch/arm/boot/msm8974pro-ab-pm8941-m8.dtb := /mnt/android/M8Kernel/PsycoKernel/scripts/dtc/dtc -O dtb -o arch/arm/boot/msm8974pro-ab-pm8941-m8.dtb -b 0  -d arch/arm/boot/.msm8974pro-ab-pm8941-m8.dtb.d arch/arm/boot/dts/msm8974pro-ab-pm8941-m8.dts
 
 source_arch/arm/boot/msm8974pro-ab-pm8941-m8.dtb := arch/arm/boot/dts/msm8974pro-ab-pm8941-m8.dts
 

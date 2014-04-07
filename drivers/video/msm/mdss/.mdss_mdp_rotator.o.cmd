@@ -1,4 +1,4 @@
-cmd_drivers/video/msm/mdss/mdss_mdp_rotator.o := /mnt/android/M8Kernel/M8_ATT/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,drivers/video/msm/mdss/.mdss_mdp_rotator.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/M8_ATT/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/M8_ATT/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -Wno-maybe-uninitialized -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mdss_mdp_rotator)"  -D"KBUILD_MODNAME=KBUILD_STR(mdss_mdp)" -c -o drivers/video/msm/mdss/.tmp_mdss_mdp_rotator.o drivers/video/msm/mdss/mdss_mdp_rotator.c
+cmd_drivers/video/msm/mdss/mdss_mdp_rotator.o := /mnt/android/M8Kernel/PsycoKernel/scripts/gcc-wrapper.py /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-gcc -Wp,-MD,drivers/video/msm/mdss/.mdss_mdp_rotator.o.d  -nostdinc -isystem /mnt/android/toolchains/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/include -I/mnt/android/M8Kernel/PsycoKernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /mnt/android/M8Kernel/PsycoKernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -finline-functions -fgcse-after-reload -ftree-partial-pre -fipa-cp-clone -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -ftree-vectorize -pipe -fno-delete-null-pointer-checks -funswitch-loops -fpredictive-commoning -marm -mfloat-abi=softfp -funsafe-math-optimizations -funroll-loops -mvectorize-with-neon-quad -fgraphite-identity -floop-block -ftree-loop-linear -floop-strip-mine -ftree-loop-distribution -fmodulo-sched -fmodulo-sched-allow-regmoves -Os -Wno-maybe-uninitialized -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mdss_mdp_rotator)"  -D"KBUILD_MODNAME=KBUILD_STR(mdss_mdp)" -c -o drivers/video/msm/mdss/.tmp_mdss_mdp_rotator.o drivers/video/msm/mdss/mdss_mdp_rotator.c
 
 source_drivers/video/msm/mdss/mdss_mdp_rotator.o := drivers/video/msm/mdss/mdss_mdp_rotator.c
 
@@ -15,7 +15,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
@@ -31,7 +31,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/posix_types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/posix_types.h \
   include/asm-generic/posix_types.h \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
@@ -44,7 +44,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/spinlock_types.h \
     $(wildcard include/config/generic/lockbreak.h) \
     $(wildcard include/config/debug/spinlock.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/spinlock_types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
@@ -53,31 +53,31 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
   include/linux/linkage.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/linkage.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/linkage.h \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/atomic.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/atomic.h \
   include/linux/irqflags.h \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/irqflags.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ptrace.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/irqflags.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hwcap.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/barrier.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hwcap.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/barrier.h \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/outercache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cmpxchg.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cmpxchg.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
@@ -88,7 +88,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/panic/on/data/corruption.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/bug.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/debug/bugverbose.h) \
@@ -106,7 +106,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/sysinfo.h \
   /mnt/android/toolchains/arm-eabi-4.8/lib/gcc/arm-eabi/4.8/include/stdarg.h \
   include/linux/bitops.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/bitops.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/bitops.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -115,10 +115,10 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/byteorder.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/swab.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
   include/linux/log2.h \
@@ -131,15 +131,15 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/div64.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/compiler.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/div64.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/compiler.h \
   include/linux/ktime.h \
     $(wildcard include/config/ktime/scalar.h) \
   include/linux/time.h \
     $(wildcard include/config/arch/uses/gettimeoffset.h) \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/cache.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/seqlock.h \
@@ -151,25 +151,25 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/preempt/notifiers.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/thread_info.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/fpstate.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/domain.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/spinlock.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/msm/krait/wfe/fixup.h) \
     $(wildcard include/config/arm/ticket/locks.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/processor.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hw_breakpoint.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
@@ -205,24 +205,24 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/linux/param.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/param.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/timex.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/timex.h \
   arch/arm/mach-msm/include/mach/timex.h \
     $(wildcard include/config/have/arch/has/current/timer.h) \
   include/linux/wait.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/current.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/current.h \
   include/linux/sw_sync.h \
   drivers/video/msm/mdss/mdss_mdp.h \
   include/linux/io.h \
     $(wildcard include/config/has/ioport.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/io.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/io.h \
     $(wildcard include/config/need/mach/io/h.h) \
     $(wildcard include/config/pcmcia/soc/common.h) \
     $(wildcard include/config/pci.h) \
     $(wildcard include/config/isa.h) \
     $(wildcard include/config/pccard.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/memory.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/need/mach/memory/h.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
@@ -257,7 +257,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/htc/debug/rtb.h) \
     $(wildcard include/config/msm/rtb.h) \
   arch/arm/mach-msm/include/mach/io.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/page.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -268,8 +268,8 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/kuser/helpers.h) \
     $(wildcard include/config/have/arch/pfn/valid.h) \
     $(wildcard include/config/memory/hotplug/sparse.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/glue.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/pgtable-2level-types.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/glue.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/pgtable-2level-types.h \
   include/asm-generic/getorder.h \
   include/linux/msm_mdp.h \
   include/linux/fb.h \
@@ -317,7 +317,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/nr/cpus.h) \
     $(wildcard include/config/base/small.h) \
   include/linux/completion.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/device.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
     $(wildcard include/config/iommu/api.h) \
     $(wildcard include/config/arm/dma/use/iommu.h) \
@@ -381,7 +381,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/string.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/string.h \
   include/linux/nodemask.h \
   include/linux/numa.h \
     $(wildcard include/config/nodes/shift.h) \
@@ -403,18 +403,18 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/guard.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/mmu.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
   arch/arm/include/generated/asm/cputime.h \
   include/asm-generic/cputime.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/smp.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/smp.h \
   include/linux/sem.h \
   include/linux/ipc.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ipcbuf.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ipcbuf.h \
   include/asm-generic/ipcbuf.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/sembuf.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/sembuf.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/rcu/torture/test.h) \
     $(wildcard include/config/tree/rcu.h) \
@@ -424,9 +424,9 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/debug/objects/rcu/head.h) \
   include/linux/rcutree.h \
   include/linux/signal.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/signal.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/sigcontext.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/sigcontext.h \
   arch/arm/include/generated/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/linux/pid.h \
@@ -471,7 +471,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/have/arch/nodedata/extension.h) \
   include/linux/notifier.h \
   include/linux/srcu.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/topology.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/topology.h \
     $(wildcard include/config/arm/cpu/topology.h) \
   include/asm-generic/topology.h \
   include/linux/proportions.h \
@@ -511,7 +511,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
     $(wildcard include/config/sparc.h) \
     $(wildcard include/config/of/dynamic.h) \
     $(wildcard include/config/of.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/prom.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/prom.h \
   include/linux/kgdb.h \
     $(wildcard include/config/have/arch/kgdb.h) \
     $(wildcard include/config/kgdb.h) \
@@ -530,8 +530,8 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/hardirq.h \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/hardirq.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/irq.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/hardirq.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/irq.h \
     $(wildcard include/config/sparse/irq.h) \
   include/linux/irq_cpustat.h \
   include/linux/circ_buf.h \
@@ -558,7 +558,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/bit_spinlock.h \
   include/linux/path.h \
   include/linux/stat.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/stat.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/stat.h \
   include/linux/radix-tree.h \
   include/linux/semaphore.h \
   include/linux/fiemap.h \
@@ -572,14 +572,14 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/dqblk_qtree.h \
   include/linux/nfs_fs_i.h \
   include/linux/fcntl.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/fcntl.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/err.h \
   include/linux/major.h \
   include/linux/termios.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/termios.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/termbits.h \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/ioctls.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/termios.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/termbits.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/ioctls.h \
   include/asm-generic/ioctls.h \
   include/linux/tty_driver.h \
   include/linux/export.h \
@@ -596,7 +596,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_rotator.o := \
   include/linux/platform_device.h \
     $(wildcard include/config/suspend.h) \
     $(wildcard include/config/hibernate/callbacks.h) \
-  /mnt/android/M8Kernel/M8_ATT/arch/arm/include/asm/kgdb.h \
+  /mnt/android/M8Kernel/PsycoKernel/arch/arm/include/asm/kgdb.h \
   include/linux/ptrace.h \
   include/linux/backlight.h \
   include/linux/slab.h \
