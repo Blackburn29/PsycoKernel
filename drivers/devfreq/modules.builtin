@@ -1,3 +1,0 @@
-kernel/drivers/devfreq/governor_simpleondemand.ko
-kernel/drivers/devfreq/governor_performance.ko
-kernel/drivers/devfreq/governor_msm_adreno_tz.ko

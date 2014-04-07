@@ -1,1 +1,0 @@
-cmd_drivers/video/msm/mdss/mdss-mdp3.o := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/video/msm/mdss/mdss-mdp3.o drivers/video/msm/mdss/mdp3.o drivers/video/msm/mdss/mdp3_dma.o drivers/video/msm/mdss/mdp3_ctrl.o drivers/video/msm/mdss/mdp3_ppp.o drivers/video/msm/mdss/mdp3_ppp_hwio.o drivers/video/msm/mdss/mdp3_ppp_data.o 

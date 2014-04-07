@@ -1,1 +1,0 @@
-cmd_drivers/media/common/tuners/mt2131.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o drivers/media/common/tuners/mt2131.ko drivers/media/common/tuners/mt2131.o drivers/media/common/tuners/mt2131.mod.o

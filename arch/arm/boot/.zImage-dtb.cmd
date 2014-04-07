@@ -1,1 +1,0 @@
-cmd_arch/arm/boot/zImage-dtb := (cat arch/arm/boot/zImage arch/arm/boot/msm8974pro-ab-pm8941-m8.dtb arch/arm/boot/msm8974pro-ab-pm8941-m8-xb.dtb arch/arm/boot/msm8974pro-ab-pm8941-m8-xd.dtb arch/arm/boot/msm8974pro-ab-pm8941-m8-xe.dtb arch/arm/boot/msm8974pro-ab-pm8941-m8-xf.dtb > arch/arm/boot/zImage-dtb) || (rm -f arch/arm/boot/zImage-dtb; false)

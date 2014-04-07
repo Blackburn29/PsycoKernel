@@ -1,1 +1,0 @@
-cmd_drivers/misc/tspp.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o drivers/misc/tspp.ko drivers/misc/tspp.o drivers/misc/tspp.mod.o

@@ -1,1 +1,0 @@
-cmd_drivers/input/touchscreen/built-in.o :=  /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/input/touchscreen/built-in.o drivers/input/touchscreen/synaptics_3k.o drivers/input/touchscreen/rmi_dev.o drivers/input/touchscreen/synaptics_i2c_rmi4.o drivers/input/touchscreen/synaptics_fw_update.o 

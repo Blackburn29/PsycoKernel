@@ -1,1 +1,0 @@
-cmd_drivers/md/dm-crypt.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o drivers/md/dm-crypt.ko drivers/md/dm-crypt.o drivers/md/dm-crypt.mod.o

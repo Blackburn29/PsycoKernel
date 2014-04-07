@@ -1,1 +1,0 @@
-cmd_drivers/gpio/built-in.o :=  /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/gpio/built-in.o drivers/gpio/gpiolib.o drivers/gpio/devres.o drivers/gpio/gpio-msm-common.o drivers/gpio/gpio-msm-v3.o drivers/gpio/qpnp-pin.o 

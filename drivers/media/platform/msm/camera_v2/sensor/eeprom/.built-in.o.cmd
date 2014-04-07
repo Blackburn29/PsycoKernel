@@ -1,1 +1,0 @@
-cmd_drivers/media/platform/msm/camera_v2/sensor/eeprom/built-in.o :=  /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/media/platform/msm/camera_v2/sensor/eeprom/built-in.o drivers/media/platform/msm/camera_v2/sensor/eeprom/msm_eeprom.o 

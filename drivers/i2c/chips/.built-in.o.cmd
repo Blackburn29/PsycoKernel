@@ -1,1 +1,0 @@
-cmd_drivers/i2c/chips/built-in.o :=  /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/i2c/chips/built-in.o drivers/i2c/chips/pn544.o drivers/i2c/chips/tfa9887.o drivers/i2c/chips/tfa9887l.o drivers/i2c/chips/rt5506.o drivers/i2c/chips/cm32181.o drivers/i2c/chips/CwMcuSensor.o 

@@ -1,1 +1,0 @@
-cmd_drivers/media/dvb/frontends/ves1x93.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o drivers/media/dvb/frontends/ves1x93.ko drivers/media/dvb/frontends/ves1x93.o drivers/media/dvb/frontends/ves1x93.mod.o

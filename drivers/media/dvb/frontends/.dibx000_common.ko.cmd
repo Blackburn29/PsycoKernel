@@ -1,1 +1,0 @@
-cmd_drivers/media/dvb/frontends/dibx000_common.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o drivers/media/dvb/frontends/dibx000_common.ko drivers/media/dvb/frontends/dibx000_common.o drivers/media/dvb/frontends/dibx000_common.mod.o

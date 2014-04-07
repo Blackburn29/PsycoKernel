@@ -1,1 +1,0 @@
-cmd_arch/arm/mvp/commkm/commkm.ko := /mnt/android/toolchains/arm-eabi-4.8/bin/arm-eabi-ld -EL -r  -T /mnt/android/M8Kernel/PsycoKernel/scripts/module-common.lds --build-id  -o arch/arm/mvp/commkm/commkm.ko arch/arm/mvp/commkm/commkm.o arch/arm/mvp/commkm/commkm.mod.o
