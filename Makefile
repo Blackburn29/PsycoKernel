@@ -355,7 +355,8 @@ CFLAGS_MODULE   =
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
 CFLAGS_KERNEL	= -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -ffast-math -ftree-vectorize -pipe \
-		  -fgcse-lm -fgcse-sm -fsched-spec-load -fsingle-precision-constant
+		  -fgcse-lm -fgcse-sm -fsched-spec-load -fsingle-precision-constant -fgraphite \
+		  -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block
 AFLAGS_KERNEL	= -mcpu=cortex-a15 -mtune=cortex-a15 -mfpu=neon-vfpv4 -ffast-math -ftree-vectorize -pipe
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 
