@@ -32,7 +32,7 @@ modules.builtin
 *.lzo
 *.patch
 *.gcno
-
+*.REMOVED.*
 #
 # Top-level generic files
 #
